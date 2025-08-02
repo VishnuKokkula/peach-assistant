@@ -1,6 +1,11 @@
 import { Mic } from 'lucide-react'
 
-export function VoiceButton({ onClick, active }) {
+type VoiceButtonProps = {
+  onClick: () => void
+  active: boolean
+}
+
+export function VoiceButton({ onClick, active }: VoiceButtonProps) {
   return (
     <button
       onClick={onClick}
